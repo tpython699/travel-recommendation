@@ -55,7 +55,7 @@ function getRecommendations(event) {
                     </div>`
                 })
             } else {
-                recommendations.innerHTML += recommendations.innerHTML=`<h2 class='text-center text-white text-2xl'>No result</h2>`
+                recommendations.innerHTML += recommendations.innerHTML=`<h2 class='text-center text-black text-2xl'>No result</h2>`
             }
         })
         .catch(error => console.log(error))
