@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Travel recommendation</title>
+        <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    </head>
+    <body class=" font-sans min-h-screen bg-cover bg-center bg-no-repeat relative" style="background-image: url('/img/background.avif');">
+      
+      <!-- container with gradient -->
+      <div class="absolute inset-0 bg-linear-to-r  from-sky-800/80 via-sky-600/20 to-sky-500/50">
+        <nav class=" flex justify-between p-4 items-center bg-sky-200/50">
+          <div class="flex justify-between items-center gap-2">
+              <p class="text-2xl font-bold italic font-serif">Travel Bloom</p>
+          </div>
+          <div class="flex gap-4 text-lg font-medium">
+              <a href="/">Home</a>
+              <a href="/about.html">About Us</a>
+              <a href="/contact.html">Contact Us</a>
+          </div>
+          <!-- search bar -->
+          <div>
+              
+          </div>
+        </nav>
+      
+        <!-- container div for grid layout -->
+        <div class=" m-2 mt-4 ">
+        
+          <!-- about section -->
+          <div class="text-white p-5 ">
+            <h2 class="text-white text-6xl font-bold italic">ABOUT US</h2>
+            <p class="mt-4 text-white font-medium text-lg shadow-lg">Tell shoppers the origin story of your business and why you started it. For the most impact, make it memorable and personal, so customers relate and connect with your brand. If your brand is your name or it was formed based on a personal brand, your company’s story can be one and the same with your founder story.</p>
+            
+            <h2 class="mt-7 text-4xl shadow-sm">Our Team</h2>
+            <div class="flex justify-between mt-2">
+                <div class="bg-black/20 p-5 mt-2 font-serif text-2xl rounded-2xl
+                ">
+                    <h3 class="font-bold pb-2">John Doe</h3>
+                    <p class="pb-2">John is responsible for...</p>
+                    <p class="text-center bg-sky-200/50 ">CEO</p>
+                </div>
+                <div class="bg-black/20 p-5 mt-2 font-serif text-2xl rounded-2xl
+                ">
+                    <h3 class="font-bold pb-2">Mack Walsh</h3>
+                    <p class="pb-2">John is responsible for...</p>
+                    <p class="text-center bg-sky-200/50 ">Manager</p>
+                </div>
+                <div class="bg-black/20 p-5 mt-2 font-serif text-2xl rounded-2xl
+                ">
+                    <h3 class="font-bold pb-2">Laura Cerve</h3>
+                    <p class="pb-2">John is responsible for...</p>
+                    <p class="text-center bg-sky-200/50 ">Intern</p>
+                </div>
+            </div>
+            
+
+            <!-- contact div -->
+            <div class=" w-full mt-4 ml-8 flex justify-center">
+              <ul class="flex justify-between w-50 items-center" >
+                <li><a href="https://www.facebook.com">
+                    <img class="w-8.5" src="/img/facebook.svg"/>
+                </a></li>
+                <li><a href="https://www.instagram.com/">
+                    <img class="w-8" src="img/instagram.svg"/>
+                </a></li>
+                <li><a href="https://www.twitter.com">
+                    <img class="w-8"  src="/img/x.svg"/>
+                </a></li>
+              </ul>
+            </div>
+          </div>
+          
+          <!-- //recommendation div -->
+          <div id="recommendations" class=" pl-10 h-120 overflow-y-auto ">
+            
+          </div>
+          
+          
+        </div>
+      </div>
+    </body>
+</html>

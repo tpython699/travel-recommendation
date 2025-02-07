@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Travel recommendation</title>
+        <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    </head>
+    <body class=" font-sans min-h-screen bg-cover bg-center bg-no-repeat relative" style="background-image: url('/img/background.avif');">
+      
+      <!-- container with gradient -->
+      <div class="absolute inset-0 bg-linear-to-r  from-sky-300/80 via-sky-300/20 to-transparent">
+        <nav class=" flex justify-between p-4 items-center bg-sky-200/50">
+          <div class="flex justify-between items-center gap-2">
+              <p class="text-2xl font-bold italic font-serif">Travel Bloom</p>
+          </div>
+          <div class="flex gap-4 text-lg font-medium">
+              <a href="/">Home</a>
+              <a href="/about.html">About Us</a>
+              <a href="/contact.html">Contact Us</a>
+          </div>
+          <!-- search bar -->
+          <div>
+              <form id='search_form' class="relative w-full max-w-md">
+                  <div class="flex items-center border border-gray-500 rounded-2xl overflow-hidden shadow-sm focus-within:ring-2 focus-within:ring-blue-500">
+                    <input
+                      id="search_bar"
+                      type="text"
+                      class="w-full px-4 py-2 outline-none text-gray-800"
+                      placeholder="Search..."
+                    />
+                    <button type="button" type="submit" id="submit" class="p-2 text-gray-500 ">
+                      <img src="/img/search.svg" class="w-8"/>
+                    </button>
+                    <button id="reset" type="button" class="p-2 pr-4">
+                      <img src="/img/clear.svg" class="w-8"/>
+                    </button>
+                  </div>
+                </form>
+          </div>
+        </nav>
+      
+        <!-- container div for grid layout -->
+        <div class="grid grid-cols-[6fr_6fr] gap-2 m-2 mt-4 ">
+        
+          <!-- welcome section -->
+          <div class="text-black p-5 ">
+            <h2 class="text-6xl  font-bold italic">
+              EXPLORE YOUR<br>
+              DREAM<br>  
+              DESTINATION<br>
+            </h2>
+
+            <p class="text-3xl font-semibold mt-5 italic">It makes your life worth living</p>
+          
+            <button class=" mt-5 p-1 px-2 text-2xl font-semibold border border-black-500 rounded-xl bg-sky-200/20 hover:bg-sky-600">Book now</button>
+
+            <!-- contact div -->
+            <div class="w-full mt-8 ">
+              <ul class="flex justify-between w-50 items-center" >
+                <li><a href="https://www.facebook.com">
+                    <img class="w-8.5" src="/img/facebook.svg"/>
+                </a></li>
+                <li><a href="https://www.instagram.com/">
+                    <img class="w-8" src="img/instagram.svg"/>
+                </a></li>
+                <li><a href="https://www.twitter.com">
+                    <img class="w-8"  src="/img/x.svg"/>
+                </a></li>
+              </ul>
+            </div>
+          </div>
+          
+          <!-- //recommendation div -->
+          <div id="recommendations" class=" pl-10 h-120 overflow-y-auto ">
+            
+          </div>
+          
+          
+        </div>
+      </div>
+    </body>
+    <script src="travel_recommendation.js"></script>
+</html>
